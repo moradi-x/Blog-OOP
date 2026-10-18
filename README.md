@@ -1,100 +1,110 @@
-# Moradix Blog  
-A simple dynamic blog built with **PHP OOP** and **JSON Database**
+# وبلاگ مورادیکس | Moradix Blog
 
-This project is a fully dynamic blog system created without using traditional databases such as MySQL.  
-All data including users, posts, and settings are stored inside **JSON files**.
+یک وبلاگ پویا و ساده که با استفاده از **PHP OOP** و **JSON** به‌عنوان سیستم ذخیره‌سازی اطلاعات توسعه داده شده است.
 
-The project is built using **Object-Oriented Programming**, featuring a full admin panel, validation system, authentication, search, categories, and more.
+این پروژه یک سیستم وبلاگ کاملاً پویاست که بدون استفاده از پایگاه‌داده‌های سنتی مانند MySQL پیاده‌سازی شده است.
+
+تمام اطلاعات، از جمله کاربران، مطالب و تنظیمات، داخل فایل‌های **JSON** ذخیره می‌شوند.
+
+این پروژه با رویکرد **برنامه‌نویسی شیءگرا (OOP)** توسعه داده شده و امکاناتی مانند پنل مدیریت، سیستم اعتبارسنجی، احراز هویت، جستجو، دسته‌بندی مطالب و موارد دیگر را ارائه می‌دهد.
 
 ---
-## 📸 Screenshots
 
+## 📸 تصاویر پروژه
 
-### 👨‍💻 User Side
+### 👨‍💻 بخش کاربران
+
 <table>
   <tr>
     <td align="center">
       <img src="assets/images/homePage.png" width="400"><br>
-      <strong>Home Page</strong>
+      <strong>صفحه اصلی</strong>
     </td>
     <td align="center">
       <img src="assets/images/singlePage.png" width="400"><br>
-      <strong>Single Post Page</strong>
+      <strong>صفحه مطلب</strong>
     </td>
   </tr>
 </table>
 
-### 🔐 Admin Panel
+### 🔐 پنل مدیریت
+
 <table>
   <tr>
     <td align="center">
       <img src="assets/images/loginPage.png" width="400"><br>
-      <strong>Login Page</strong>
+      <strong>صفحه ورود</strong>
     </td>
     <td align="center">
       <img src="assets/images/adminPage.png" width="400"><br>
-      <strong>Admin Dashboard</strong>
+      <strong>داشبورد مدیریت</strong>
     </td>
   </tr>
 
   <tr>
     <td align="center">
       <img src="assets/images/adminCreatePage.png" width="400"><br>
-      <strong>Create Post</strong>
+      <strong>ایجاد مطلب جدید</strong>
     </td>
     <td align="center">
       <img src="assets/images/adminEditPage.png" width="400"><br>
-      <strong>Edit Post</strong>
+      <strong>ویرایش مطلب</strong>
     </td>
   </tr>
 </table>
 
-## 🚀 Features
+---
 
-### 🧑‍💻 User Side
-- View all published posts  
-- Category filtering: Scientific, Technology, Research, Design  
-- Search by title and content  
-- "Top Posts" based on views  
-- "Last Posts" based on publish date  
-- Single post page with image, content, date, and views  
+## 🚀 امکانات پروژه
+
+### 🧑‍💻 بخش کاربران
+
+- مشاهده تمام مطالب منتشرشده
+- فیلتر مطالب بر اساس دسته‌بندی‌های علمی، فناوری، پژوهش و طراحی
+- جستجو بر اساس عنوان و محتوای مطالب
+- نمایش مطالب برتر بر اساس تعداد بازدید
+- نمایش آخرین مطالب بر اساس تاریخ انتشار
+- صفحه اختصاصی هر مطلب شامل تصویر، محتوا، تاریخ انتشار و تعداد بازدید
 
 ---
 
-### 🔐 Admin Panel
-- Secure login system  
-- Display posts list (ID, Title, Views, Date, Actions)  
-- Create new posts (title, category, content, image)  
-- Edit and delete posts  
-- Display admin name in header  
-- Logout  
+### 🔐 پنل مدیریت
+
+- سیستم ورود امن مدیر
+- نمایش فهرست مطالب شامل شناسه، عنوان، تعداد بازدید، تاریخ و عملیات
+- ایجاد مطلب جدید با عنوان، دسته‌بندی، محتوا و تصویر
+- ویرایش و حذف مطالب
+- نمایش نام مدیر در سربرگ پنل
+- امکان خروج از حساب کاربری
 
 ---
 
-## 🧱 Technologies
-- PHP 8+  
-- Full OOP structure  
-- Composer Autoload  
-- JSON-based storage  
-- Pure HTML & CSS  
-- No JavaScript
-- no mvc
-- Custom template system  
+## 🧱 فناوری‌های استفاده‌شده
+
+- **PHP 8+**
+- ساختار برنامه‌نویسی شیءگرا (OOP)
+- بارگذاری خودکار کلاس‌ها با Composer Autoload
+- ذخیره‌سازی اطلاعات با استفاده از فایل‌های JSON
+- HTML و CSS خالص
+- بدون استفاده از JavaScript
+- بدون استفاده از معماری MVC
+- سیستم قالب‌بندی اختصاصی (Custom Template System)
 
 ---
 
-## 📂 Folder Structure
-```
+## 📂 ساختار پوشه‌های پروژه
+
+```text
 ├── assets
-│ ├── css
-│ └── images
+│   ├── css
+│   └── images
 ├── database
 ├── src
-│ ├── Classes
-│ ├── Entities
-│ ├── Exceptions
-│ ├── Models
-│ └── Templates
+│   ├── Classes
+│   ├── Entities
+│   ├── Exceptions
+│   ├── Models
+│   └── Templates
 ├── vendor
 ├── composer.json
 └── index.php
@@ -103,26 +113,3 @@ The project is built using **Object-Oriented Programming**, featuring a full adm
 ---
 
 
-
-▶️ How to Run
-
-- git clone``` https://github.com/YourUser/YourRepo.git ```
-- composer install
-- ``` php -S localhost:8000 ```
-- ``` http://localhost:8000/index.php ```
-
----
-
-
-🎯 Project Purpose
-This project was created to learn:
-
-OOP in PHP
-
-JSON storage instead of a database
-
-Authentication & validation
-
-CRUD operations
-
-Understanding structure before learning MVC
